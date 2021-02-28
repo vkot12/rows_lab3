@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static double row1(double m, double k) {
-        if (k < 0 || k >= 30) {
+        if (k < 0 || k > 30) {
             throw new IllegalArgumentException("param a = " + k);
         }
         double i, total = 0;
