@@ -1,3 +1,9 @@
+/*
+Лабораторна робота №3 завданнтя №1
+Варіант:16
+Виконали:студенти групи ТМ-81
+Пономаренко Іван, Славінський Дмитро
+*/
 package com.company;
 
 import static java.lang.Math.sin;
@@ -24,7 +30,7 @@ public class Main {
 
     public static double row1(double m, double k) {
         if (k < 0 || k > 30) {
-            throw new IllegalArgumentException("param a = " + k);
+            throw new IllegalArgumentException("param k = " + k);
         }
         double i, total = 0;
         for (i = 1; i <= k; i++)
@@ -35,7 +41,7 @@ public class Main {
 
 
    public static void printResults(double m, double k) {
-        System.out.print("a:" + m + " x:" + k + " result:");
+        System.out.print("k:" + m + " x:" + k + " result:");
         try {
             System.out.println(row1(m, k));
         } catch (IllegalArgumentException e) {
